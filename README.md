@@ -1,7 +1,6 @@
 # Inclass
 
 20-1 (1)
-<<<<<<< HEAD
 - Introduction to Software
 
 20-2 (2)
@@ -39,12 +38,3 @@
 23-2 (8)
 - Computer Architecture and Organization
 - Probability and Random Processes
-=======
-20-2 (2)
-21-1 (3)
-21-2 (4)
-22-1 (5)
-22-2 (6)
-23-1 (7)
-23-2 (8)
->>>>>>> e2df56e8f466b9d5fa55eb673fc3d0c6886cfae0

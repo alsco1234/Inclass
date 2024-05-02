@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd"
+>
+<mapper namespace="Store">
+		<insert id="insertStore">
+			insert into STORE (belong, name, address, latitude, longitude)
+			values
+			(#{belong}, #{name}, #{address}, #{latitude}, #{longitude})
+		</insert>
+		<update id="updateStore">
+			update STORE
+			set belong=#{belong}, name=#{name}, address=#{address}, latitude=#{latitude}, longitude=#{longitude}
+			where seq=#{seq}
+		</update>
+		<delete id="deleteStore">
+			delete from STORE where seq=#{seq}
+		</delete>
+		<select id="getStore" resultType="store">
+			select * from STORE where seq=#{seq}
+		</select>
+		<select id="getStoreList" resultType="store">
+			select * from STORE order by seq desc
+		</select>
+</mapper>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd"
+>
+<mapper namespace="Franchisee">
+		<insert id="insertFranchisee">
+			insert into FRANCHISEE (name, callnum, category, admin, address, latitude, longitude)
+			values
+			(#{name}, #{callnum}, #{category}, #{admin}, #{address}, #{latitude}, #{longitude})
+		</insert>
+		<update id="updateFranchisee">
+			update FRANCHISEE
+			set name = #{name}, callnum=#{callnum}, category=#{category}, admin=#{admin}, address=#{address}, latitude=#{latitude}, longitude=#{longitude}
+			where seq=#{seq}
+		</update>
+		<delete id="deleteFranchisee">
+			delete from FRANCHISEE where seq=#{seq}
+		</delete>
+		<select id="getFranchisee" resultType="franchisee">
+			select * from FRANCHISEE where seq=#{seq}
+		</select>
+		<select id="getFranchiseeList" resultType="franchisee">
+			select * from FRANCHISEE order by seq desc
+		</select>
+		<select id="searchFranchiseeList" resultType="franchisee">
+			select * from FRANCHISEE
+			<where>
+				<if test='column == "name"'>name</if>
+				<if test='column == "callnum"'>callnum</if>
+				<if test='column == "category"'>category</if>
+				<if test='column == "admin"'>admin</if>
+				<if test='column == "address"'>address</if>
+				LIKE #{keyword}
+			</where>
+			order by seq desc
+		</select>
+		<select id="lookoutFranchiseeList" resultType="franchisee">
+			select * from FRANCHISEE
+			where latitude <![CDATA[>=]]> (#{latitude} - 0.009)
+			AND latitude <![CDATA[<=]]> (#{latitude} + 0.009)
+			AND longitude <![CDATA[>=]]> (#{longitude} - 0.0118)
+			AND longitude <![CDATA[<=]]> (#{longitude} + 0.0118)
+			order by seq desc
+		</select>
+</mapper>

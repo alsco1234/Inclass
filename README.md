@@ -32,7 +32,6 @@
 
 23-1 (7)
 - Software Engineering
-- Capstone Design
 - Python Programming
 
 23-2 (8)

@@ -1,2 +1,2 @@
 String BASE_URL = "https://api.openai.com/v1";
-String API_KEY = ""; // your api key
+String API_KEY = ""; // your api ㅂㅁ!~ㅋ₩  ?

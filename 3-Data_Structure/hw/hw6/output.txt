@@ -1,0 +1,19 @@
+Sorting Algorithm	Data Size	Number of Comparisons	Execution Time (in seconds)
+---------------------------------------------------------------------------------
+Selection Sort		10	45	0
+Selection Sort		100	4950	0
+Selection Sort		1000	499500	0
+Selection Sort		10000	49995000	0
+Selection Sort		100000	704982704	40
+---------------------------------------------------------------------------------
+Insertion Sort	10	40	0
+Insertion Sort	100	2380	0
+Insertion Sort	1000	254808	0
+Insertion Sort	10000	24961792	0
+Insertion Sort	100000	-1796811036	25
+---------------------------------------------------------------------------------
+Quick Sort	10	37	0
+Quick Sort	100	800	0
+Quick Sort	1000	11703	0
+Quick Sort	10000	160633	0
+Quick Sort	100000	2009949	0

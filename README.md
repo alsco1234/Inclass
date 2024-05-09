@@ -12,6 +12,7 @@
 - Logic Design
 - Open Source Software Lab
 - Introduction to JAVA Programming
+- Data Structure
 
 21-2 (4)
 - Computer Vision

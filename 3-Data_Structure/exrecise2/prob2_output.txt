@@ -1,0 +1,7 @@
+Student id Final Score Rank
+1 77 3
+2 56 10
+3 68 5
+…………………………………………………………
+14 92 1
+Class average: 63.9

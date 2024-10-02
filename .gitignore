@@ -1,3 +1,9 @@
 *.pth
 *.pt
+*.doc
+*.docx
+*.pdf
+*.exe
+*.xlsx
+*.csv
 __pycache__
